@@ -23,7 +23,7 @@ function App() {
         return response.json();
       })
       .then((jsonData) => {
-        console.log({ jsonData });
+        // console.log({ jsonData });
         setNews(jsonData.articles);
       })
       .catch((err) => {

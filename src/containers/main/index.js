@@ -21,7 +21,7 @@ function Container({ news }) {
   useEffect(() => {
     let keyword = pathname?.replace("/", "");
     let index = navList.findIndex((e) => e.id === keyword);
-    if (index > 0) {
+    if (index >= 0) {
       setSelected(navList[index]);
     }
   }, []);
